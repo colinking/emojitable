@@ -6,6 +6,8 @@ This package was written for and has been tested with Emojicode v0.3 only.
 
 # Installation
 
+This package supports installation on macOS and Linux systems. It has been tested on macOS 10.11.6 and Ubuntu 14.04.
+
 ```bash
 $ # Download and setup Emojicode.
 $ make install
@@ -21,7 +23,7 @@ $ make stress-test
 👴 Initialize a new emojitable (📰) of size 10 that stores String (🔡) keys.
 🍦 table 🔷 📰🐚🔡 📝 10
 
-👴 Insert the key-value pair, ("Hello", "World"). Returns true (👍) on success.
+👴 Insert the key-value pair: ("Hello", "World"). Returns true (👍) on success.
 🍦 success ✏ table 🔤Hello🔤 🔤World🔤
 
 👴 Fetch the value that is mapped to by "Hello". Returns an optional (🍬).

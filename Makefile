@@ -1,4 +1,4 @@
-.PHONY: install,download-mac,download-linux,install-emojicode,link,uninstall,clean,test
+.PHONY: install download-mac download-linux install-emojicode link uninstall clean test dist
 
 UNAME := $(shell uname)
 # Linux
@@ -49,3 +49,8 @@ test:
 stress-test:
 	@ emojicodec tests/emojitable-stresstest.emojic
 	@ time emojicode tests/emojitable-stresstest.emojib
+
+# Zips this directory
+dist:
+	mkdir -p dist
+	git archive -o dist/emojitable.zip @

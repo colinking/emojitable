@@ -1,1 +1,3 @@
 **/*.emojib
+dist
+.DS_Store

@@ -1,42 +1,48 @@
 
 🔮 0 1
 
-🐇 🗒 🐚 V 🔵 🍇
+👴 A 🔒 represents a key-value tuple stored within a 📰.
+🐇 🔒 🐚 V 🔵 🍇
 	🍰 k 🔡
 	🍰 v V
 
-	🐈 📝 k. 🔡 v. V 🍇
+	👴 Construct a 🔒 from a key-value pair.
+	🐈 🆕 k. 🔡 v. V 🍇
 		🍮 k k.
 		🍮 v v.
 	🍉
 
+	👴 Key getter
 	🐖 🔑 ➡ 🔡 🍇
 		🍎 k
 	🍉
 
-	🐖 🔒 ➡ V 🍇
+	👴 Value getter
+	🐖 🔓 ➡ V 🍇
 		🍎 v
 	🍉
 
+	👴 Value setter
 	🐖 🔏 v. V 🍇
 		🍮 v v.
 	🍉
 🍉
 
-👴 emojitable: string (🔡) to object (🔵) hashtable
+👴 A 📰 is a fixed-size hashmap that associates string keys (🔡) with object values (🔵).
 🌍 🐇 📰 🐚 V 🔵 🍇
 	🍰 size 🚂
 	🍰 capacity 🚂
-	🍰 objects 🍨🐚🍨🐚🍬🗒🐚V
+	👴 List of linked lists of optional generic 🔒s
+	🍰 objects 🍨🐚🍨🐚🍬🔒🐚V
 
-	👴 constructor(size)
+	👴 Constructs a new fixed-size 📰 of the given size.
 	🐈 📝 capacity. 🚂 🍇
 		🍮 size 0
 		🍮 capacity capacity.
-		🍮 objects 🔷 🍨🐚🍨🐚🍬🗒🐚V 🐧 capacity
+		🍮 objects 🔷 🍨🐚🍨🐚🍬🔒🐚V 🐧 capacity
 	🍉
 
-	👴 boolean set(string key, obj ref)
+	👴 Maps the given key to the given value. Returns true on success.
 	🐖 ✏ k 🔡 v V ➡️ 👌 🍇
 		🍦 i 🔑🐕 k
 
@@ -60,13 +66,13 @@
 				🍊 😛 size capacity 🍇
 					🍎 👎
 				🍉
-				🍦 new 🔷 🗒🐚V 📝 k v
+				🍦 new 🔷 🔒🐚V 🆕 k v
 				🐻 list new
 				🍫 size
 			🍉
 		🍉 🍓 🍇
-			🍦 l 🔷 🍨🐚🗒🐚V 🐸
-			🍦 v' 🔷 🗒🐚V 📝 k v
+			🍦 l 🔷 🍨🐚🔒🐚V 🐸
+			🍦 v' 🔷 🔒🐚V 🆕 k v
 			🐻 l v'
 			🐷 objects i l
 			🍫 size
@@ -74,21 +80,21 @@
 		🍎 👍
 	🍉
 
-	👴 obj get(key)
+	👴 Returns the value associated with the given key as an optional.
 	🐖 📖 k 🔡 ➡️ 🍬V 🍇
 		🍦 i 🔑🐕 k
 		🍦 list 🐽 objects i
 		🍊🍦 list' list 🍇
 			🔂 v list' 🍇
 				🍊 😛 🔑 🍺 v k 🍇
-					🍎 🔒 🍺 v
+					🍎 🔓 🍺 v
 				🍉
 			🍉
 		🍉
 		🍎 ⚡️
 	🍉
 
-	👴 obj delete(key)
+	👴 Deletes and returns the value associated with the given key.
 	🐖 🗑 k 🔡 ➡️ 🍬V 🍇
 		🍊 ▶ size 0 🍇
 			🍳 size
@@ -100,7 +106,7 @@
 					🍦 elem 🍺 🐽 list j
 					🍊 😛 🔑 elem k 🍇
 						🐨 list j
-						🍎 🔒 elem
+						🍎 🔓 elem
 					🍉
 					🍫 j
 				🍉
@@ -109,13 +115,14 @@
 		🍎 ⚡️
 	🍉
 
+	👴 Returns the load factor of this 📰.
 	👴 float load()
 	🐖 📈 ➡️ 🚀 🍇
 		🍎 ➗ 🚀 size 🚀 capacity
 	🍉
 
-	👴 int hash(string)
-	👴 Uses djb2 hash algorithm: http://www.cse.yorku.ca/~oz/hash.html
+	👴 Hashes a string key into an array index.
+	👴 Uses the djb2 hash algorithm (see: http://www.cse.yorku.ca/~oz/hash.html)
 	🔐 🐖 🔑️ s 🔡 ➡️ 🚂 🍇
 		🍮 hash 5381
 		🔂 c 🍡 s 🍇

@@ -2,15 +2,19 @@
 
 > Fixed-size Hash Map written in native Emojicode.
 
-This package was written for and has been tested with Emojicode v0.3 only. It has been tested on macOS 10.11.6 and Ubuntu 16.04.
+
+# Compatibility
+
+- This package was written for and has been tested with **Emojicode v0.3** only.
+- This package supports installation on macOS and Linux systems.  It has been tested on **macOS 10.11.6** and **Ubuntu 14.04**.
 
 # Installation
 
-This package supports installation on macOS and Linux systems.
+*Note*: Emojicode requires 512MB for heap allocation. You should have at least 1GB of RAM in order to run these tests.
 
 ```bash
 $ # Download and setup Emojicode.
-$ make install
+$ sudo make install
 $ # Run tests on this package.
 $ make test
 $ # Run a stress test on this package (don't expect much 😁).

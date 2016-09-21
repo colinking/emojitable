@@ -20,6 +20,9 @@ $ make stress-test
 # Example Code
 
 ```
+👴 First import the emojitable package.
+📦 emojitable 🔴
+
 👴 Initialize a new emojitable (📰) of size 10 that stores String (🔡) keys.
 🍦 table 🔷 📰🐚🔡 📝 10
 

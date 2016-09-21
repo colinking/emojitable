@@ -1,0 +1,10 @@
+{
+  "projectName": "emojitable",
+  "files": [
+    "emojitable-v0/header.emojic",
+    "tests/emojitable-test.emojic",
+    "include/testsHelper.emojic"
+  ],
+	"compilerPath": "/usr/local/bin/emojicodec",
+	"enginePath": "/usr/local/bin/emojicode"
+}

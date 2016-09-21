@@ -1,0 +1,38 @@
+👴 This file is copied from:
+👴 https://github.com/emojicode/emojicode/blob/master/tests/s/testsHelper.emojic
+👴 as it currently is not exposed as a package.
+👴 It has been slightly modified to show successes, along with failures.
+🐇 👈 🍇
+  🍰 asserts 🚂
+  🍰 failed 🚂
+  🍰 succeeded 🚂
+
+  🐈 🆕 🍇
+    🍮 asserts 0
+    🍮 failed 0
+    🍮 succeeded 0
+  🍉
+
+	🐖 ⛔️ a 👌 description 🔡🍇
+		🍫 asserts
+		🍊 ❎ a 🍇
+			😀 🍪🔤❌❌  Failed:  🔤 description🍪
+			🍫 failed
+		🍉 🍓 🍇
+			😀 🍪🔤✅  Success: 🔤 description🍪
+			🍫 succeeded
+		🍉
+	🍉
+
+  🐖 👔 ➡️ 🚂 🍇
+    😀 🍪 🔡 succeeded 10 🔤 of 🔤 🔡 asserts 10 🔤 tests succeeded.🔤🍪
+    🍊 ▶️ failed 0 🍇
+      🍎 1
+    🍉
+    🍎 0
+  🍉
+
+  🐖 🏁 🍇
+    😀 🔤You might want to implement the 🏁 method.🔤
+  🍉
+🍉

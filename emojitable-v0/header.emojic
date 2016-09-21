@@ -1,0 +1,127 @@
+
+🔮 0 1
+
+🐇 🗒 🐚 V 🔵 🍇
+	🍰 k 🔡
+	🍰 v V
+
+	🐈 📝 k. 🔡 v. V 🍇
+		🍮 k k.
+		🍮 v v.
+	🍉
+
+	🐖 🔑 ➡ 🔡 🍇
+		🍎 k
+	🍉
+
+	🐖 🔒 ➡ V 🍇
+		🍎 v
+	🍉
+
+	🐖 🔏 v. V 🍇
+		🍮 v v.
+	🍉
+🍉
+
+👴 emojitable: string (🔡) to object (🔵) hashtable
+🌍 🐇 📰 🐚 V 🔵 🍇
+	🍰 size 🚂
+	🍰 capacity 🚂
+	🍰 objects 🍨🐚🍨🐚🍬🗒🐚V
+
+	👴 constructor(size)
+	🐈 📝 capacity. 🚂 🍇
+		🍮 size 0
+		🍮 capacity capacity.
+		🍮 objects 🔷 🍨🐚🍨🐚🍬🗒🐚V 🐧 capacity
+	🍉
+
+	👴 boolean set(string key, obj ref)
+	🐖 ✏ k 🔡 v V ➡️ 👌 🍇
+		🍦 i 🔑🐕 k
+
+		🍊🍦 list 🐽 objects i 🍇
+			🍮 found 👎
+			🍮 j 0
+			🍦 n 🐔 list
+			🔁 🎊 ❎ found ◀ j n 🍇
+				🍦 curr 🍺 🐽 list j
+				🍦 k' 🔑 curr
+				🍊 😛 k' k 🍇
+					🍮 found 👍
+				🍉 🍓 🍇
+					🍫 j
+				🍉
+			🍉
+			🍊 ◀ j n 🍇
+				🍦 curr 🍺 🐽 list j
+				🔏 curr v
+			🍉 🍓 🍇
+				🍊 😛 size capacity 🍇
+					🍎 👎
+				🍉
+				🍦 new 🔷 🗒🐚V 📝 k v
+				🐻 list new
+				🍫 size
+			🍉
+		🍉 🍓 🍇
+			🍦 l 🔷 🍨🐚🗒🐚V 🐸
+			🍦 v' 🔷 🗒🐚V 📝 k v
+			🐻 l v'
+			🐷 objects i l
+			🍫 size
+		🍉
+		🍎 👍
+	🍉
+
+	👴 obj get(key)
+	🐖 📖 k 🔡 ➡️ 🍬V 🍇
+		🍦 i 🔑🐕 k
+		🍦 list 🐽 objects i
+		🍊🍦 list' list 🍇
+			🔂 v list' 🍇
+				🍊 😛 🔑 🍺 v k 🍇
+					🍎 🔒 🍺 v
+				🍉
+			🍉
+		🍉
+		🍎 ⚡️
+	🍉
+
+	👴 obj delete(key)
+	🐖 🗑 k 🔡 ➡️ 🍬V 🍇
+		🍊 ▶ size 0 🍇
+			🍳 size
+			🍦 i 🔑🐕 k
+			🍊🍦 list 🐽 objects i 🍇
+				🍮 j 0
+				🍦 n 🐔 list
+				🔁 ◀ j n 🍇
+					🍦 elem 🍺 🐽 list j
+					🍊 😛 🔑 elem k 🍇
+						🐨 list j
+						🍎 🔒 elem
+					🍉
+					🍫 j
+				🍉
+			🍉
+		🍉
+		🍎 ⚡️
+	🍉
+
+	👴 float load()
+	🐖 📈 ➡️ 🚀 🍇
+		🍎 ➗ 🚀 size 🚀 capacity
+	🍉
+
+	👴 int hash(string)
+	👴 Uses djb2 hash algorithm: http://www.cse.yorku.ca/~oz/hash.html
+	🔐 🐖 🔑️ s 🔡 ➡️ 🚂 🍇
+		🍮 hash 5381
+		🔂 c 🍡 s 🍇
+			🍦 n 🚂 c
+			🍮 hash ➕ ➕ 👈 hash 5 hash n
+		🍉
+		🍎 🚮 hash capacity
+	🍉
+🍉

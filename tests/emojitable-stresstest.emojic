@@ -1,0 +1,21 @@
+📦 emojitable 🔴
+
+🏁 ➡️ 🚂 🍇
+	😀 🔤Running a stress test on emojitable🔤
+	😀 🔤Inserting and deleting 750k elements🔤
+
+	🍦 n 750000
+	🍦 table 🔷 📰🐚🔡 📝 n
+	🍮 i 0
+	🔁 ◀ i n 🍇
+		✏ table 🔡 i 10 🔡 i 10
+		🍫 i
+	🍉
+	🍮 i 0
+	🔁 ◀ i n 🍇
+		🗑 table 🔡 i 10
+		🍫 i
+	🍉
+
+	🍎 0
+🍉

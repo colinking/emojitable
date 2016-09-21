@@ -2,11 +2,11 @@
 
 > Fixed-size Hash Map written in native Emojicode.
 
-This package was written for and has been tested with Emojicode v0.3 only.
+This package was written for and has been tested with Emojicode v0.3 only. It has been tested on macOS 10.11.6 and Ubuntu 16.04.
 
 # Installation
 
-This package supports installation on macOS and Linux systems. It has been tested on macOS 10.11.6 and Ubuntu 14.04.
+This package supports installation on macOS and Linux systems.
 
 ```bash
 $ # Download and setup Emojicode.

@@ -1,7 +1,7 @@
 
 🔮 0 1
 
-👴 A 🔒 represents a key-value tuple stored within a 📰.
+👴 A 🔒 represents a key-value tuple stored within a 📔.
 🐇 🔒 🐚 V 🔵 🍇
 	🍰 k 🔡
 	🍰 v V
@@ -28,22 +28,22 @@
 	🍉
 🍉
 
-👴 A 📰 is a fixed-size hashmap that associates string keys (🔡) with object values (🔵).
-🌍 🐇 📰 🐚 V 🔵 🍇
+👴 A 📔 is a fixed-size hashmap that associates string keys (🔡) with object values (🔵).
+🌍 🐇 📔 🐚 V 🔵 🍇
 	🍰 size 🚂
 	🍰 capacity 🚂
 	👴 List of linked lists of optional generic 🔒s
 	🍰 objects 🍨🐚🍨🐚🍬🔒🐚V
 
-	👴 Constructs a new fixed-size 📰 of the given size.
-	🐈 📝 capacity. 🚂 🍇
+	👴 Constructs a new fixed-size 📔 of the given size.
+	🐈 📦 capacity. 🚂 🍇
 		🍮 size 0
 		🍮 capacity capacity.
 		🍮 objects 🔷 🍨🐚🍨🐚🍬🔒🐚V 🐧 capacity
 	🍉
 
 	👴 Maps the given key to the given value. Returns true on success.
-	🐖 ✏ k 🔡 v V ➡️ 👌 🍇
+	🐖 📝 k 🔡 v V ➡️ 👌 🍇
 		🍦 i 🔑🐕 k
 
 		🍊🍦 list 🐽 objects i 🍇
@@ -115,7 +115,7 @@
 		🍎 ⚡️
 	🍉
 
-	👴 Returns the load factor of this 📰.
+	👴 Returns the load factor of this 📔.
 	👴 float load()
 	🐖 📈 ➡️ 🚀 🍇
 		🍎 ➗ 🚀 size 🚀 capacity

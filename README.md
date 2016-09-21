@@ -27,11 +27,11 @@ $ make stress-test
 👴 First import the emojitable package.
 📦 emojitable 🔴
 
-👴 Initialize a new emojitable (📰) of size 10 that stores String (🔡) keys.
-🍦 table 🔷 📰🐚🔡 📝 10
+👴 Initialize a new emojitable (📔) of size 10 that stores String (🔡) keys.
+🍦 table 🔷 📔🐚🔡 📦 10
 
 👴 Insert the key-value pair: ("Hello", "World"). Returns true (👍) on success.
-🍦 success ✏ table 🔤Hello🔤 🔤World🔤
+🍦 success 📝 table 🔤Hello🔤 🔤World🔤
 
 👴 Fetch the value that is mapped to by "Hello". Returns an optional (🍬).
 🍦 value 📖 table 🔤Hello🔤

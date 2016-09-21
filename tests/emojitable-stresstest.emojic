@@ -5,10 +5,10 @@
 	😀 🔤Inserting and then deleting 750k elements.🔤
 
 	🍦 n 750000
-	🍦 table 🔷 📰🐚🔡 📝 n
+	🍦 table 🔷 📔🐚🔡 📦 n
 	🍮 i 0
 	🔁 ◀ i n 🍇
-		✏ table 🔡 i 10 🔡 i 10
+		📝 table 🔡 i 10 🔡 i 10
 		🍫 i
 	🍉
 	🍮 i 0

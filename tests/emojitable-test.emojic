@@ -12,19 +12,19 @@
 		😀 🔤Running tests on emojitable...🔤
 
 		👴 Create a new emojitable with capacity 10
-		🍦 table 🔷 📰🐚🔡 📝 10
+		🍦 table 🔷 📔🐚🔡 📦 10
 
 		👴 Test that individual elements can be set/get.
-		⛔️🐕 ✏ table 🔤Hello🔤 🔤World🔤 🔤insert succeeds ("Hello" -> "World")🔤
+		⛔️🐕 📝 table 🔤Hello🔤 🔤World🔤 🔤insert succeeds ("Hello" -> "World")🔤
 		🍦 value 📖 table 🔤Hello🔤
 		⛔️🐕 ❎ ☁ value 🔤Read value ("World") is non-nothing🔤
 		⛔️🐕 😛 🍺 value 🔤World🔤 🔤Read value is "World"🔤
 		⛔️🐕 😛 📈 table 0.1 🔤Load factor is correct🔤
 
 		👴 Test that multiple elements can be get/set.
-		⛔️🐕 ✏ table 🔤Colin🔤 🔤King🔤 🔤Insert succeeds ("Colin" -> "King")🔤
-		⛔️🐕 ✏ table 🔤John🔤 🔤Dough🔤 🔤Insert succeeds ("John" -> "Dough")🔤
-		⛔️🐕 ✏ table 🔤Prince🔤 🔤Charming🔤 🔤Insert succeeds ("Prince" -> "Charming")🔤
+		⛔️🐕 📝 table 🔤Colin🔤 🔤King🔤 🔤Insert succeeds ("Colin" -> "King")🔤
+		⛔️🐕 📝 table 🔤John🔤 🔤Dough🔤 🔤Insert succeeds ("John" -> "Dough")🔤
+		⛔️🐕 📝 table 🔤Prince🔤 🔤Charming🔤 🔤Insert succeeds ("Prince" -> "Charming")🔤
 		⛔️🐕 😛 📈 table 0.4 🔤Updated load factor is correct🔤
 
 		👴 Verify that deleted elements are deleted.
@@ -40,14 +40,14 @@
 		⛔️🐕 ☁ value4 🔤Reading non-existant value returns nothing🔤
 
 		👴 Verify that deleted elements can be re-inserted.
-		⛔️🐕 ✏ table 🔤Prince🔤 🔤Nelson🔤 🔤Re-inserting deleted element succeeds ("Prince" -> "Nelson")🔤
+		⛔️🐕 📝 table 🔤Prince🔤 🔤Nelson🔤 🔤Re-inserting deleted element succeeds ("Prince" -> "Nelson")🔤
 		🍦 value5 📖 table 🔤Prince🔤
 		⛔️🐕 ❎ ☁ value5 🔤Reading re-inserted value ("Nelson") returns non-nothing🔤
 		⛔️🐕 😛 🍺 value5 🔤Nelson🔤 🔤Returned value is "Nelson"🔤
 		⛔️🐕 😛 📈 table 0.4 🔤Updated load factor is correct🔤
 
 		👴 Verify that overwriting a key works correctly
-		⛔️🐕 ✏ table 🔤John🔤 🔤Bender🔤 🔤Overwriting a key succeeds ("John" -> "Bender")🔤
+		⛔️🐕 📝 table 🔤John🔤 🔤Bender🔤 🔤Overwriting a key succeeds ("John" -> "Bender")🔤
 		🍦 value6 📖 table 🔤John🔤
 		⛔️🐕 ❎ ☁ value6 🔤Reading overwritten value ("Bender") returns non-nothing🔤
 		⛔️🐕 😛 🍺 value6 🔤Bender🔤 🔤Returned value is "Bender"🔤
@@ -71,12 +71,12 @@
 		👴 Verify that inserting more elements than capacity fails
 		🍮 i 0
 		🔁 ◀ i 10 🍇
-			✏ table 🍪 🔤key🔤 🔡 i 10 🍪 🍪 🔤value🔤 🔡 i 10 🍪
+			📝 table 🍪 🔤key🔤 🔡 i 10 🍪 🍪 🔤value🔤 🔡 i 10 🍪
 			🍫 i
 		🍉
 		⛔️🐕 😛 📈 table 1.0 🔤A full table has a 1.0 load factor🔤
-		⛔️🐕 ❎ ✏ table 🔤key11🔤 🔤value11🔤 🔤Inserting too many times fails🔤
+		⛔️🐕 ❎ 📝 table 🔤key11🔤 🔤value11🔤 🔤Inserting too many times fails🔤
 
-		⛔️🐕 ✏ table 🔤key5🔤 🔤value5🔤 🔤Inserting a pre-existing key in a full table succeeds🔤
+		⛔️🐕 📝 table 🔤key5🔤 🔤value5🔤 🔤Inserting a pre-existing key in a full table succeeds🔤
 	🍉
 🍉

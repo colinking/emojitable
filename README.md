@@ -10,7 +10,7 @@
 
 # Installation
 
-*Note*: Emojicode requires 512MB for heap allocation. You should have at least 1GB of RAM in order to run these tests.
+*Note*: If you are running this on a VM, keep in mind that Emojicode requires 512MB for heap allocation. You should have at least 1GB of RAM in order to run these tests.
 
 ```bash
 $ # Download and setup Emojicode.
